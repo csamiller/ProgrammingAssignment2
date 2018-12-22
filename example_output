@@ -1,0 +1,19 @@
+> source('~/GitHub/ProgrammingAssignment2/cachematrix.R')
+> x <- matrix(1:4, nrow = 2, ncol = 2)
+> y <- makeCacheMatrix(x)
+> z <- cacheSolve(y)
+> z
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> z <- cacheSolve(y)
+getting cached data
+> z
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> x %*% z
+     [,1] [,2]
+[1,]    1    0
+[2,]    0    1
+> 
